@@ -1,0 +1,222 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+hr{
+    width: 100%;
+}
+
+#inst{
+    background-color: rgb(153, 0, 255);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 104, 22);
+    color: #ffffff;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 30px;
+}
+#btn{
+    background-color: rgb(0, 98, 210);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#board{
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.tile{
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-over-message {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    font-weight: bold;
+    color: rgb(255, 45, 45);
+}
+.x2{
+    background-color: rgb(250, 243, 232);
+    color: rgb(74, 72, 72);
+}
+.x4{
+    background-color: rgb(233, 216, 192);
+    color: rgb(39, 38, 38);
+}
+.x8{
+    background-color: rgb(255, 173, 50);
+    color: rgb(255, 255, 255);
+}
+.x16{
+    background-color: rgb(255, 115, 0);
+    color: rgb(255, 255, 255);
+}
+.x32{
+    background-color: rgb(255, 98, 0);
+    color: rgb(255, 255, 255);
+}
+.x64{
+    background-color: rgb(255, 50, 67);
+    color: rgb(255, 255, 255);
+}
+.x128{
+    background-color: rgb(255, 50, 187);
+    color: rgb(72, 72, 72);
+}
+.x256{
+    background-color: rgb(255, 50, 248);
+    color: rgb(0, 0, 0);
+}
+.x512{
+    background-color: rgb(212, 15, 252);
+    color: rgb(32, 28, 28);
+}
+.x1024{
+    background-color: rgb(140, 0, 255);
+    color: rgb(255, 255, 255);
+}
+.x2048{
+    background-color: rgb(0, 98, 255);
+    color: rgb(255, 255, 255);
+}
+.x4096{
+    background-color: rgb(255, 214, 50);
+    color: rgb(0, 0, 0);
+}
+.x8192{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 254, 254);
+}
+/* Base styles */
+
+
+
+/* ... (rest of your CSS code) ... */
+
+/* Media queries for different screen sizes */
+
+/* For screens up to 600px wide */
+@media (max-width: 600px) {
+    #board {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tile {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    .head {
+        flex-direction: row;
+    }
+
+    .card, #btn, #inst {
+        font-size: 13px; 
+        padding: 5px;
+    }
+    .card{
+        font-size: 10px;
+        height: 15px;
+    }
+}
+
+/* For screens between 600px and 900px wide */
+@media (min-width: 601px) and (max-width: 900px) {
+    #board {
+        width: 340px;
+        height: 340px;
+    }
+
+    .tile {
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+    }
+
+    .card, #btn, #inst {
+        font-size: 18px;
+    }
+}
+
+/* For screens between 901px and 1200px wide */
+@media (min-width: 901px) and (max-width: 1200px) {
+    #board {
+        width: 400px;
+        height: 400px;
+    }
+
+    .tile {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+    }
+
+    .card, #btn, #inst {
+        font-size: 20px;
+    }
+}
+
+/* For screens larger than 1200px wide */
+/* @media (min-width: 1201px) {
+    #board {
+        width: 500px;
+        height: 500px;
+    }
+
+    .tile {
+        width: 90px;
+        height: 90px;
+        font-size: 45px;
+    }
+
+    .card, #btn, #inst {
+        font-size: 22px;
+    }
+} */
