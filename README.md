@@ -1,2 +1,2 @@
 # 2048_Game
-See the preview here mpsslalitha2048game.netlify.app
+See the preview here https://mpsslalitha2048game.netlify.app/
